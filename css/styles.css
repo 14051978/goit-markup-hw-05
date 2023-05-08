@@ -128,7 +128,7 @@ span{
   font-size: 16px;
   line-height:1.5;
   text-decoration: none;
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio.link{
     position: relative;
@@ -150,7 +150,12 @@ span{
 
     background-color: var(--hover-color);
     border-radius: 2px;
+    
+
 }
+
+
+
 .portfolio.link{
     position: relative;
     color: var(--hover-color);
@@ -187,17 +192,22 @@ address {
 .contacts-item:not(:last-child){
     margin-right: 40px;
 }
-.adress{
-    display: flex;
-    margin-left: auto;
 
-    
-}
+
 .contacts{
     display: flex;
     margin-left: auto;
 
-   color:var(--primary-text-color) ;
+}
+.contacts-list{
+    display: flex;
+    padding: 24px 0 24px;
+    margin-right: 40px;
+}
+
+.contacts-link{
+
+    color:var(--primary-text-color) ;
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
@@ -206,9 +216,10 @@ address {
 }
 
     
-.contacts:hover,
-.contacts:focus{
+.contacts-link:hover,
+.contacts-link:focus{
     color: var(--hover-color);
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 /* main-section */
     .hero-section{
